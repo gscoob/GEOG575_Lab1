@@ -1,0 +1,135 @@
+/* Stylesheet by Greg Farnsworth, 2019 */
+
+
+body {
+padding: 0;
+margin: 0;
+}
+
+
+html,
+body,
+#map {
+height: 100%;
+font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+
+.leaflet-popup-content p {
+    margin: 0.1em 0;
+}
+
+
+.sequence-control-container {
+    width: 300px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 45px;
+    text-align: center;
+    border: solid gray 1px;
+}
+
+
+.legend-control-container {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 25px;
+    text-align: center;
+    border: solid gray 1px;
+    font-size: 1.5em;
+}
+
+
+.legend-density-container {
+    width: 300px;
+    height: 135px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 25px;
+    text-align: center;
+    border: solid gray 1px;
+    font-size: 1.5em;
+}
+
+
+.range-slider {
+    width: 64%;
+}
+
+
+.img {
+    max-width:50%;
+    height:auto;
+}
+
+
+#attribute-legend {
+    width:100%;
+    height: auto;
+    text-align: right;
+    align-items: baseline;
+}
+
+
+#forward {
+    float: right;
+    width: 10%;
+    color: lightgray;
+}
+
+
+#reverse {
+    float: left;
+    max-width: 10%;
+}
+
+
+#mapid {
+    height: inherit;
+    width: 100%;
+    display: inline-block;
+}
+
+
+#header {
+    height: 80px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+#panel {
+    width: 25%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 42px;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+#th2 {
+    font-size: 1.3em;
+}
+
+
+#th1, #th3 {
+    text-align: right;
+}
+
+#th3 {
+    padding-left: 30px;
+}
+
+#infotext {
+    font-size: 1.2em;
+}

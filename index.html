@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta 
+            lang="en"
+            name="viewport"
+            charset="utf-8" 
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        >
+
+        <title>GEOG 575 Leaflet Lab #1</title>
+        
+        <!-- link all stylesheets -->
+        <script src="https://kit.fontawesome.com/868151dcca.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="lib/leaflet.css">
+        <link rel="stylesheet" href="lib/leaflet.zoomhome.css"/>
+        <link rel="stylesheet" href="lib/leaflet-sidebar.css" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- add sidebar to the document to display map info -->
+        <div id="sidebar" class="leaflet-sidebar collapsed">
+            <!-- sidebar nav tabs -->
+            <div class="leaflet-sidebar-tabs">
+                <ul role="tablist">
+                    <li>
+                        <a href="#home" role="tab"><i class="fas fa-info-circle"></i></a>
+                    </li>
+                    <li>
+                        <a href="#data" role="tab"><i class="fas fa-database"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- sidebar tab panes -->
+            <div class="leaflet-sidebar-content">
+                <div class="leaflet-sidebar-pane" id="home">
+                    <h1 class="leaflet-sidebar-header">
+                        The FHFA House Price Index
+                        <span class="leaflet-sidebar-close"><i class="fas fa-caret-right"></i></span>
+                    </h1>
+                    
+                    <div id="infotext">
+                        
+                        <p>
+                            A house price index (HPI) measures the price changes of residential housing as a percentage change from some specific start date (which has an HPI of 100).
+                        </p>
+
+                        <p>
+                            The Federal Housing Finance Authority (FHFA) HPI is a broad measure of the movement of single-family house prices. The FHFA HPI is a weighted, repeat-sales index, meaning that it measures average price changes in repeat sales or refinancings on the same properties. This information is obtained by reviewing repeat mortgage transactions on single-family properties whose mortgages have been purchased or securitized by Fannie Mae or Freddie Mac since January 1975.
+                        </p>
+
+                        <p>
+                            The FHFA HPI serves as a timely, accurate indicator of house price trends at various geographic levels. Because of the breadth of the sample, it provides more information than is available in other house price indexes. It also provides housing economists with an improved analytical tool that is useful for estimating changes in the rates of mortgage defaults, prepayments and housing affordability in specific geographic areas.
+                        </p>
+
+                        <p>
+                            The FHFA HPI includes house price figures for the nine Census Bureau divisions, for the 50 states and the District of Columbia, and for Metropolitan Statistical Areas (MSAs) and Divisions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="leaflet-sidebar-pane" id="data">
+                    <h1 class="leaflet-sidebar-header" id="data_header">
+                        HPI Data for All Cities
+                        <span class="leaflet-sidebar-close"><i class="fas fa-caret-right"></i></span>
+                    </h1>
+                    <table style="width:80%" id="citytable">
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!-- add the map to the document -->
+        <div id="mapid"></div>
+
+        <!-- external script links -->
+        <script src="lib/leaflet.js"></script>
+        <script src="lib/leaflet.zoomhome.js"></script>
+        <script type="text/javascript" src="lib/leaflet-sidebar.js"></script>
+        <script type="text/javascript" src="lib/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+</html>
